@@ -1,13 +1,13 @@
 $(function (){
-	getJoke(); 
+	muestroChiste(); 
 	
 	$('#btn-chiste').on('click', function(){
-		getJoke();	
+		muestroChiste();	
 	});
 
 	
 	
-	function getJoke(){
+	function muestroChiste(){
 		var $mostrarChiste = $('#mostrarChiste'); 	
 		$.ajax({
 			type:'GET',
